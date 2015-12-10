@@ -1,0 +1,74 @@
+<?php /* Smarty version 3.1.24, created on 2015-10-20 19:05:44
+         compiled from "smarty/templates/footer.tpl" */ ?>
+<?php
+/*%%SmartyHeaderCode:28450562666582aa138_63266284%%*/
+if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '225f2a9b5922e5b91445dd0893ace94f2b6625ea' => 
+    array (
+      0 => 'smarty/templates/footer.tpl',
+      1 => 1445357141,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '28450562666582aa138_63266284',
+  'variables' => 
+  array (
+    'cms' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => '3.1.24',
+  'unifunc' => 'content_5626665832afd5_93806249',
+),false);
+/*/%%SmartyHeaderCode%%*/
+if ($_valid && !is_callable('content_5626665832afd5_93806249')) {
+function content_5626665832afd5_93806249 ($_smarty_tpl) {
+
+$_smarty_tpl->properties['nocache_hash'] = '28450562666582aa138_63266284';
+?>
+            </div>
+        </div>
+        <footer><div class="fixed-contacts"></div> &copy PGulbickij.lt 2015</footer>
+        <?php echo '<script'; ?>
+ type="text/javascript" src=" http://code.jquery.com/jquery-latest.min.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+>
+             $(function(){
+                $( "*", document.body ).on('contextmenu', function(event) {
+                    event.stopPropagation();
+                    var domElement = $( this ).get( 0 );
+                    console.log(domElement.text);
+                    console.log(domElement.innerHTML);
+                    console.log(domElement.val());
+                    //alert("Clicked on - " + domElement.innerHTML);
+                    return false;
+                });
+            });
+        <?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ type="text/javascript" src="build/combined.min.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ type="text/javascript" src="build/script.min.js"><?php echo '</script'; ?>
+>
+        <?php if ($_smarty_tpl->tpl_vars['cms']->value == 'true') {?>
+        <?php echo '<script'; ?>
+ src="//cdn.ckeditor.com/4.5.3/standard/ckeditor.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ type="text/javascript" src="/portfolio/portfolio.lt/js/ckeditor/sample.js">     <?php echo '</script'; ?>
+>
+        
+    
+        <?php }?>
+
+<?php }
+}
+?>
